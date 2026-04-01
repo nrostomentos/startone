@@ -1,2 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Danganronpa | Итоговая работа Анны Бердниковой</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
 
-<a href"https://market.yandex.ru/">
+        /* --- ЦВЕТА DANGANRONPA --- */
+        :root {
+            --dr-pink: #e6007a;
+            --dr-red: #b52e2e;
+            --dr-black: #1a1a1a;
+            --dr-white: #f8f8f8;
+            --dr-gray: #2e2e2e;
+            --dr-shadow: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Светлая тема (Надежда) с фоновым изображением */
+        [data-theme="light"] {
+            --bg-color: var(--dr-white);
+            --text-color: var(--dr-black);
+            --card-bg: rgba(255, 255, 255, 0.88);
+            --border-color: var(--dr-pink);
+            --shadow: var(--dr-shadow);
+            --btn-bg: var(--dr-pink);
+            --btn-hover-bg: #ff1a8c;
+            --secondary-text: #4a4a4a;
+            --badge-bg: #f0f0f0;
+            --accent-glow: rgba(230, 0, 122, 0.2);
+            --modal-overlay: rgba(0, 0, 0, 0.75);
+            --bg-image: url('https://ih1.redbubble.net/image.1807591863.8447/st,small,507x507-pad,600x600,f8f8f8.jpg');
+        }
+
+        /* Темная тема (Отчаяние) с фоновым изображением */
+        [data-theme="dark"] {
+            --bg-color: #0a0a0a;
+            --text-color: #e0e0e0;
+            --card-bg: rgba(20, 20, 20, 0.92);
+            --border-color: var(--dr-red);
+            --shadow: rgba(0, 0, 0, 0.6);
+            --btn-bg: var(--dr-red);
+            --btn-hover-bg: #ff4d4d;
+            --secondary-text: #b0b0b0;
+            --badge-bg: #1e1e1e;
+            --accent-glow: rgba(181, 46, 46, 0.25);
+            --modal-overlay: rgba(0, 0, 0, 0.85);
+            --bg-image: url('https://avatars.mds.yandex.net/i?id=36d656363d45d516a3566811d213ead8_l-3592543-images-thumbs&n=13');
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Poppins', 'Impact', 'Arial Black', system-ui, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            line-height: 1.5;
+            padding: 20px;
+            /* Фоновое изображение с затемнением для читаемости текста */
+            background-image: var(--bg-image), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+            background-size: cover, auto;
+            background-position: center, center;
+            background-repeat: no-repeat, repeat;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+        }
+
+        /* Дополнительный эффект: попытка "убрать фон" у изображений через смешивание */
+        /* Этот блок можно удалить, если эффект не нужен или работает некорректно */
+        [data-theme="light"] .frame-block,
+        [data-theme="light"] .main-header,
+        [data-theme="light"] .modal-content {
+            backdrop-filter: blur(2px) brightness(1.02);
+        }
+        
+        [data-theme="dark"] .frame-block,
+        [data-theme="dark"] .main-header,
+        [data-theme="dark"] .modal-content {
+            backdrop-filter: blur(2px) brightness(0.98);
+        }
+        
+        /* --- ОСТАЛЬНОЙ КОД (модалка, кнопки, стили) ОСТАЕТСЯ БЕЗ ИЗМЕНЕНИЙ --- */
+        /* ... (здесь размещается весь предыдущий CSS из модального окна и основной вёрстки) ... */
+        
+        /* Для краткости я приведу полный рабочий код в финальном ответе */
+    </style>
+</head>
+<body>
+    <!-- МОДАЛЬНОЕ ОКНО С ОПРОСОМ (код из предыдущего ответа) -->
+    <!-- ... -->
+
+    <!-- ОСНОВНОЙ КОНТЕНТ (код из предыдущего ответа) -->
+    <!-- ... -->
+    
+    <script>
+        // ... (весь JavaScript из предыдущего ответа)
+    </script>
+</body>
+</html>
